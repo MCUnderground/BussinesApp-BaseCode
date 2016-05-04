@@ -10,7 +10,7 @@
 		android:targetSdkVersion="21"/>
 
 	<uses-permission
-		android:name="android.permission.CALL_PHONE">
+		android:name="android.permission.INTERNET">
 
 	</uses-permission>
 
