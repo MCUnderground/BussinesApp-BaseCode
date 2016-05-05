@@ -23,8 +23,8 @@
 		android:layout_marginTop="100dp"
 		android:layout_centerHorizontal="true"
 		android:background="#1976D2"
-		style="?android:attr/borderlessButtonStyle"
-		android:text="Website and Github"	/>
+		style="?android:attr/buttonStyleSmall"
+		android:text="Website"	/>
 	<Button
 		android:id="@+id/aboutBtn"
         android:layout_width="130dp"
@@ -35,7 +35,7 @@
 		style="?android:attr/borderlessButtonStyle"
 		android:layout_centerHorizontal="true"
 		android:layout_below="@id/webBtn"
-     	android:text="About and Work"	/>
+     	android:text="About"	/>
 
 	<Button
 		android:id="@+id/contactBtn"

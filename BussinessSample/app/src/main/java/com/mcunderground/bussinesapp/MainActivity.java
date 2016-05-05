@@ -7,6 +7,7 @@ import android.view.View.*;
 import android.view.*;
 import android.content.*;
 import android.net.*;
+import android.graphics.*;
 
 public class MainActivity extends Activity implements OnClickListener
 {
@@ -14,6 +15,7 @@ public class MainActivity extends Activity implements OnClickListener
 	Button about;
 	Button contact;
 	Button exit;
+	TextView title;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,6 +27,8 @@ public class MainActivity extends Activity implements OnClickListener
 		about = (Button)findViewById(R.id.aboutBtn);
 		contact = (Button)findViewById(R.id.contactBtn);
 		exit = (Button)findViewById(R.id.exitBtn);
+		title = (TextView)findViewById(R.id.title);
+		
 		
 		websites.setOnClickListener(this);
 		about.setOnClickListener(this);
