@@ -1,6 +1,57 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
-    
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#BAA5A4">
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="We are the future!"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="25sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="About Us:"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_marginTop="13dp"
+		android:textSize="19sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="We are Company providing software and future for our users we are LostTeam"
+		android:layout_width="wrap_content"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Email:"
+		android:layout_width="wrap_content"
+		android:textSize="19sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="daniel.barinak@gmail.com"
+		android:layout_width="wrap_content"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Website"
+		android:layout_width="wrap_content"
+		android:textSize="19sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="http://lostteam.github.io/ or check the main Screen!"
+		android:layout_width="wrap_content"/>
+
 </LinearLayout>
+
