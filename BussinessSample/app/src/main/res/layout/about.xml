@@ -4,7 +4,7 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:orientation="vertical"
-	android:background="#BAA5A4">
+	android:background="@drawable/background">
 
 	<View
 		android:layout_height="1dp"
@@ -28,7 +28,7 @@
 
 	<TextView
 		android:layout_height="wrap_content"
-		android:text="We are Company providing software and future for our users we are LostTeam"
+		android:text="We are Company providing software and future for our users we are 'Company Name'"
 		android:layout_width="wrap_content"/>
 
 	<TextView
@@ -39,7 +39,7 @@
 
 	<TextView
 		android:layout_height="wrap_content"
-		android:text="daniel.barinak@gmail.com"
+		android:text="admin@domain.com"
 		android:layout_width="wrap_content"/>
 
 	<TextView

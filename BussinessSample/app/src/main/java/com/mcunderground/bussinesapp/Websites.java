@@ -3,11 +3,15 @@ import android.app.*;
 import android.os.*;
 import android.webkit.*;
 import android.content.*;
+import android.view.View.*;
+import android.widget.*;
+import android.view.*;
 
-public class Websites extends Activity
+public class Websites extends Activity implements OnClickListener
 {
 	
 	WebView myWebView;
+	Button back;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -16,6 +20,7 @@ public class Websites extends Activity
 		setContentView(R.layout.website);
 		
 		myWebView = (WebView)findViewById(R.id.web);
+		back = (Button)findViewById(R.id.backWebBtn);
 		
 		//This is link that will load
 		myWebView.loadUrl("http://lostteam.github.io");
@@ -41,7 +46,21 @@ public class Websites extends Activity
 				}  
 			
 		});
+		back.setOnClickListener(this);
 	}
+
+	@Override
+	public void onClick(View v)	{
+	if(v == back){
+		Intent back = new Intent(this, MainActivity.class);
+		startActivity(back);
+		finish();
+	}
+	}
+
+	
+	
+	
 	
 	public class myWebViewClient extends WebViewClient
 	{

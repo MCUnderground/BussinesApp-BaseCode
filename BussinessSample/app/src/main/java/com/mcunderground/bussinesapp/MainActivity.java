@@ -16,6 +16,7 @@ public class MainActivity extends Activity implements OnClickListener
 	Button contact;
 	Button exit;
 	TextView title;
+	ImageView share;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,12 +29,14 @@ public class MainActivity extends Activity implements OnClickListener
 		contact = (Button)findViewById(R.id.contactBtn);
 		exit = (Button)findViewById(R.id.exitBtn);
 		title = (TextView)findViewById(R.id.title);
+		share = (ImageView)findViewById(R.id.shareImg);
 		
 		
 		websites.setOnClickListener(this);
 		about.setOnClickListener(this);
 		contact.setOnClickListener(this);
 		exit.setOnClickListener(this);
+		share.setOnClickListener(this);
     }
 	
 	@Override
@@ -76,6 +79,16 @@ public class MainActivity extends Activity implements OnClickListener
 				.setTitle("Contact Us")
 				.create();
 			contactAlert.show();
+			
+		}
+		if(v == share){
+			Intent shareInt = new Intent(Intent.ACTION_SEND);
+			shareInt.setType("text/plain");
+			// Subject for sharing(email-
+			shareInt.putExtra(Intent.EXTRA_SUBJECT, "This 'company' is awesome check it out!");
+			// Body, also text that is used in emails, messages and more
+			shareInt.putExtra(Intent.EXTRA_TEXT, "This 'company' provides alot of things, check it out and download app here: 'link'");
+			startActivity(Intent.createChooser(shareInt, "Tell about us"));
 			
 		}
 		

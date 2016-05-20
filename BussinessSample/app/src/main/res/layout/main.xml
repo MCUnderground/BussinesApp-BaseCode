@@ -1,66 +1,77 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-	android:background="#b3ebf2">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background">
 
 	<TextView
 		android:id="@+id/title"
-        android:layout_width="fill_parent"
-        android:layout_height="60dp" 
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
 		android:gravity="center"
 		android:text="Company Name"
 		android:textStyle="bold"
 		android:textColor="#ffffff"
-		android:background="#0097a7">
+		android:background="#920097a7">
 
 	</TextView>
 
 	<Button
 		android:id="@+id/webBtn"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+		android:layout_width="130dp"
+		android:layout_height="50dp"
 		android:textColor="#ffffff"
 		android:layout_marginTop="100dp"
 		android:layout_centerHorizontal="true"
 		android:background="#1976D2"
 		style="?android:attr/buttonStyleSmall"
-		android:text="Website"	/>
+		android:text="Website"/>
+
 	<Button
 		android:id="@+id/aboutBtn"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+		android:layout_width="130dp"
+		android:layout_height="50dp"
 		android:textColor="#ffffff"
 		android:layout_marginTop="10dp"
 		android:background="#1976D2"
 		style="?android:attr/borderlessButtonStyle"
 		android:layout_centerHorizontal="true"
 		android:layout_below="@id/webBtn"
-     	android:text="About"	/>
+		android:text="About"/>
 
 	<Button
 		android:id="@+id/contactBtn"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+		android:layout_width="130dp"
+		android:layout_height="50dp"
 		android:textColor="#ffffff"
 		android:background="#1976D2"
 		style="?android:attr/borderlessButtonStyle"
 		android:layout_marginTop="10dp"
 		android:layout_centerHorizontal="true"
 		android:layout_below="@id/aboutBtn"
-		android:text="Contact"	/>
+		android:text="Contact"/>
 
 	<Button
 		android:id="@+id/exitBtn"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+		android:layout_width="130dp"
+		android:layout_height="50dp"
 		android:textColor="#ffffff"
 		android:layout_centerHorizontal="true"
 		android:layout_below="@id/contactBtn"
 		android:layout_marginTop="40dp"
-     	android:background="#f44336"
+		android:background="#f44336"
 		style="?android:attr/borderlessButtonStyle"
-		android:text="Exit"	/>
+		android:text="Exit"/>
 
-
+	<ImageView
+		android:layout_height="40dp"
+		android:layout_width="40dp"
+		android:src="@drawable/share"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="7dp"
+		android:layout_marginRight="7dp"
+		android:id="@+id/shareImg"/>
 
 </RelativeLayout>
+

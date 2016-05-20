@@ -1,10 +1,32 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-	
-	<WebView
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:id="@+id/web"	/>
-    
+	android:background="@drawable/background">
+
+	<WebView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/web"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignEnd="@id/web"
+		android:layout_alignParentRight="true"
+		android:id="@+id/backWebBtn"
+		android:text="Back"
+		android:textColor="#abffffff"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="#662788"
+		/>
+
 </RelativeLayout>
+
