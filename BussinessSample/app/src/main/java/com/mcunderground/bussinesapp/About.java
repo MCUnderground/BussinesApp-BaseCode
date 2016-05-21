@@ -1,12 +1,17 @@
 package com.mcunderground.bussinesapp;
+import android.support.v4.app.Fragment;
+import android.view.View;
+import android.view.ViewGroup;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.support.v4.app.*;
 import android.app.*;
-import android.os.*;
 
 public class About extends Activity
 {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState)
+	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about);

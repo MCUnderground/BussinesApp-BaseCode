@@ -52,7 +52,7 @@ public class Websites extends Activity implements OnClickListener
 	@Override
 	public void onClick(View v)	{
 	if(v == back){
-		Intent back = new Intent(this, MainActivity.class);
+		Intent back = new Intent(this, Fragment.class);
 		startActivity(back);
 		finish();
 	}

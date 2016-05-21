@@ -11,18 +11,20 @@ import android.graphics.*;
 
 public class MainActivity extends Activity implements OnClickListener
 {
+	
 	Button websites;
 	Button about;
 	Button contact;
 	Button exit;
 	TextView title;
 	ImageView share;
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		
 		
 		websites = (Button)findViewById(R.id.webBtn);
 		about = (Button)findViewById(R.id.aboutBtn);
@@ -37,6 +39,7 @@ public class MainActivity extends Activity implements OnClickListener
 		contact.setOnClickListener(this);
 		exit.setOnClickListener(this);
 		share.setOnClickListener(this);
+		
     }
 	
 	@Override
